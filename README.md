@@ -11,3 +11,8 @@ Jekyll te volgen. Als je gebruik maakt van Windows is de [Jekyll on Windows pagi
 waarschijnlijk interessant. Zodra Jekyll geïnstalleerd is kun je het commando `jekyll serve` uitvoeren om de site lokaal
 te bouwen. Vervolgens kun je met een browser naar [http://localhost:4000/](http://localhost:4000) gaan om het resultaat
 te zien.
+
+## Design
+
+Design is op basis van [Material Design Light](https://getmdl.io/), een project van Google. De extra CSS die gerenderd word
+in `_sass/mdl-demo.scss` is afkomstig van het [Text-heavy Webpage template](https://getmdl.io/templates/text-only/index.html).
