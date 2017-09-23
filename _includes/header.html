@@ -3,9 +3,9 @@
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         <a href="{{ site.baseurl | default: "/" }}">
-            <img src="" width="64" height="64" alt="{{ site.title }}" title="{{ site.title }}" />
+            <img src="/images/logo/logo_klein.png" width="64" height="64" alt="{{ site.title }}" title="{{ site.title }}" />
         </a>
-        <h3>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h3>
+        <h1>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
@@ -13,7 +13,7 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     {% if page_paths %}
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <nav class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
             {% for path in page_paths %}
                 {% assign my_page = site.pages | where: "path", path | first %}
                 {% if my_page.title %}
@@ -24,6 +24,6 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-        </div>
+        </nav>
     {% endif %}
 </header>
